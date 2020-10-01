@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+  db:
+    image: postgres:12-alpine
+    ports:
+      - "127.0.0.1:5432:5432"
+    environment:
+      - POSTGRES_USER=coffeebot
+      - POSTGRES_PASSWORD=coffeebot_password
+      - POSTGRES_DB=coffeebot
+  web:
+    build:
+      context: .
+    environment:
+      - QOVERY_DATABASE_COFFEE_DB_USERNAME=coffeebot
+      - QOVERY_DATABASE_COFFEE_DB_HOST=db
+      - QOVERY_DATABASE_COFFEE_DB_DATABASE=coffeebot
+      - QOVERY_DATABASE_COFFEE_DB_PASSWORD=coffeebot_password
+      - QOVERY_DATABASE_COFFEE_DB_PORT=5432
+    volumes:
+      - ./src:/usr/src/app
+    ports:
+      - 3000:3000
+    depends_on:
+      - db

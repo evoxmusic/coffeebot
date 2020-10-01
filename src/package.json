@@ -1,0 +1,19 @@
+{
+  "name": "coffeebot",
+  "version": "1.0.0",
+  "description": "The Common Code Coffee Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Simeon Morgan <simeon@commoncode.io>",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^9.4.0",
+    "luxon": "^1.25.0",
+    "pg": "^8.3.3"
+  }
+}
