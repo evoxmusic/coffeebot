@@ -1,4 +1,4 @@
-const key = "qYe4VZgQMhsAzxqJzmFCJjZi4tVsznq2ogcN3HTm";
+const key = process.env.AUTH_KEY
 const MAX_COFFEE_ADD = 5;
 const MAX_COFFEE_SUBTRACT = 2;
 const COUNT_DISPLAY_SIZE = 5;
