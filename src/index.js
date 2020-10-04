@@ -199,7 +199,7 @@ router.post('/addCoffee', async (ctx, next) => {
         ctx.body = await addCoffee(ctx.request.body.user_id, ctx.request.body.user_name, 1);
         return;
     } else {
-        ctx.body = { "response_type": "ephemeral", "text": "Something has gone horribly wrong" };
+        ctx.body = { "response_type": "ephemeral", "text": "I'm afraid I don't understand your command. Take another sip and try again." };
         return
     }
 })
