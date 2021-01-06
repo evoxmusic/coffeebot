@@ -1,15 +1,11 @@
+---
 application:
-  name: coffeebot-10-app
-  project: coffeebot-10-project
-  cloud_region: aws/ap-southeast-2
-  publicly_accessible: true
-databases:
-- type: postgresql
-  version: "11.5"
-  name: coffee-db-10-db
+  name: "coffeebot"
+  project: "Gautier-test-2"
+  organization: "QoveryCommunity"
 routers:
-- name: main
+- name: "main-coffeebot"
   routes:
-  - application_name: coffeebot-10-app
+  - application_name: "coffeebot"
     paths:
-    - /
+    - "/"
