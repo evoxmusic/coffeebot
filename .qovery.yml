@@ -1,7 +1,7 @@
 ---
 application:
   name: "coffeebot"
-  project: "Gautier-test-2"
+  project: "GoldProject"
   organization: "QoveryCommunity"
 routers:
 - name: "main-coffeebot"
