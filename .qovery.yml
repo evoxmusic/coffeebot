@@ -1,11 +1,15 @@
 ---
 application:
   name: "coffeebot"
-  project: "MyEmptyEmpty"
-  organization: "QoveryCommunity"
+  project: "DemoProject"
+  organization: "Qovery"
+databases:
+- type: "POSTGRESQL"
+  name: "sql"
+  version: "12"
 routers:
 - name: "main-coffeebot"
   routes:
   - application_name: "coffeebot"
     paths:
-    - "/"
+    - "/*"
