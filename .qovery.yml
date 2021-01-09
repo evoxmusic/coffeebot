@@ -1,11 +1,11 @@
 ---
 application:
   name: "coffeebot"
-  project: "DemoProject"
-  organization: "Qovery"
+  project: "DeployMyApp"
+  organization: "QoveryCommunity"
 databases:
 - type: "POSTGRESQL"
-  name: "sql"
+  name: "my-psql"
   version: "12"
 routers:
 - name: "main-coffeebot"
